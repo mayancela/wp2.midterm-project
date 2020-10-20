@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+  text-align: center;
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.centered { /* center div in the middle of the page */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
