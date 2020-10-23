@@ -3,13 +3,19 @@ body {
   text-align: center;
   background-color: #eee;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 h1 {
     font-size: 3em;
 }
+
 section {
     display: block;
+}
+
+ol {
+    list-style: none;
 }
 
 .centered { /* center div in the middle of the page */
@@ -31,7 +37,7 @@ section {
 
 #homepage_desc {
     margin-top: 10px;
-    font-size: 18px;
+    /* font-size: 18px; */
     color:gray;
     font-style: italic;
 }
