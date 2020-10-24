@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 section {
@@ -44,4 +44,23 @@ ul {
     /* font-size: 18px; */
     color:gray;
     font-style: italic;
+}
+
+#map-container {
+  position: relative;
+  height: 680px;
+  width:85%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+#map {
+  position: relative;
+  height: inherit;
+  width:100%;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
