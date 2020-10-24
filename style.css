@@ -18,6 +18,10 @@ ol {
     list-style: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .centered { /* center div in the middle of the page */
   position: fixed;
   top: 50%;
