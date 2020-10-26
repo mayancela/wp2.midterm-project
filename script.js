@@ -1,5 +1,3 @@
-
-
 // jquery for switching homepage image
 $(document).ready(function(){
     $("img").click(function(){

@@ -41,7 +41,12 @@ ul {
     background-color: yellow;
 }
 
-#homepage_desc {
+.benefits-desc-container {
+    width:65%;
+    margin: 0 auto;
+}
+
+#homepage-desc {
     margin-top: 10px;
     /* font-size: 18px; */
     color:gray;
