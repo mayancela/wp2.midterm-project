@@ -46,6 +46,10 @@ ul {
     margin: 0 auto;
 }
 
+.list-title {
+    line-height: 80%;
+}
+
 #homepage-desc {
     margin-top: 10px;
     /* font-size: 18px; */
