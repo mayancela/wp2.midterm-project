@@ -4,6 +4,7 @@ body {
   background-color: #eee;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+  color: #1B1B1B;
 }
 
 h1 {
@@ -38,7 +39,7 @@ ul {
 }
 
 .container {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .benefits-desc-container {
@@ -48,12 +49,17 @@ ul {
 
 .list-title {
     line-height: 80%;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+#homepage-desc-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #homepage-desc {
     margin-top: 10px;
-    /* font-size: 18px; */
-    color:gray;
     font-style: italic;
 }
 

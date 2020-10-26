@@ -27,37 +27,37 @@
 
         <div class="container">
             <h1> House Plants </h1>
-            <img id="homepage_img" class="responsive" src="images/plants-homepage.jpg" alt="Various houseplants on display">
-            <p><em>Click the image above to change it!</em></p>
-            <div style="width:80%;margin:0 auto">
+            <div id="homepage-desc-container">
                 <p id="homepage-desc"> A houseplant is a plant that is grown indoors mainly for decorative purposes. There are some
                     studies that have shown the benefits of owning some of these plants in your apartment or office. Let's find out why
-                    owning some of these green friends can be beneficial &#127793;</p>
+                    owning some of these green friends can be beneficial &#127793; </p>
             </div>
+            <img id="homepage_img" class="responsive" src="images/plants-homepage.jpg" alt="Various houseplants on display">
+            <p style="color:#707070"><em>change the image above by clicking on it!</em></p>
             <h2>Potential Benefits of Owning Houseplants</h2>
             <ol>
                 <li>
                     <p class="list-title"> 1. Allergy Relief </p>
                     <div class="benefits-desc-container">
-                        <p id = "allergy_relief"> </p>
+                        <p id = "allergy-relief"> </p>
                     </div>
                 </li>
                 <li>
                     <p class="list-title">2. Air Purifiers </p>
                     <div class="benefits-desc-container">
-                        <p id = "air_purifiers"> </p>
+                        <p id = "air-purifiers"> </p>
                     </div>
                 </li>
                 <li>
                     <p class="list-title">3. Mood Boosters</p>
                     <div class="benefits-desc-container">
-                        <p id = "mood_boosters"> </p>
+                        <p id = "mood-boosters"> </p>
                     </div>
                 </li>
                 <li>
                     <p class="list-title">4. Increasing Humidity</p>
                     <div class="benefits-desc-container">
-                        <p id = "increasing_humidity"> </p>
+                        <p id = "increasing-humidity"> </p>
                     </div>
                 </li>
                 <li>
@@ -72,37 +72,5 @@
                 </li>
             </ol>
         </div>
-        <script>
-        //jquery + json
-        /* Creating a JSON object with JSON data*/
-        var obj =
-            '{ "allergy_relief": "Researchers have found that rooms with plants have less dust and mold than rooms without any foliage. \
-             Leaves and other parts of the plant act as natural filters to catch allergens and other airborne particles."}';
-
-         var x =
-             '{ "air_purifiers": "Extensive research by NASA has revealed that houseplants can remove up to 87%  of air toxins in 24 hours."}';
-
-          var y =
-              '{ "mood_boosters": "Studies have proven that indoor plants improve concentration and productivity, \
-              reduce stress levels and boost mood. Keeping flowers and plants throughout the home and the workplace \
-              vastly increases happiness and lowers the likelihood of depression."}';
-
-           var z =
-               '{ "increasing_humidity": "A study done by the Agricultural University of Norway, showed that houseplants, when grouped together, \
-               decrease the likelihood of dry skin, common colds, and sore throats."}';
-
-        /* Parsing the JSON data*/
-        var text = JSON.parse(obj);
-        var text1 = JSON.parse(x);
-        var text2 = JSON.parse(y);
-        var text3 = JSON.parse(z);
-
-        /* Displaying the JSON data by linking the #test paragraph tag and the JSON object*/
-        document.getElementById("allergy_relief").innerHTML = text.allergy_relief + "<br>";
-        document.getElementById("air_purifiers").innerHTML = text1.air_purifiers + "<br>";
-        document.getElementById("mood_boosters").innerHTML = text2.mood_boosters + "<br>";
-        document.getElementById("increasing_humidity").innerHTML = text3.increasing_humidity + "<br>";
-
-        </script>
     </body>
 </html>
