@@ -23,7 +23,21 @@ ul {
     list-style: none;
 }
 
-/* li.over{display: inline-block; border: 1px solid blue; margin: 5px; padding: 10px; vertical-align: top;} */
+button {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background: #ddd;
+    padding: 7px;
+    border: 1px solid transparent !important;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
 
 .centered { /* center div in the middle of the page */
   position: fixed;
@@ -36,10 +50,6 @@ ul {
   width: 100%;
   max-width: 800px;
   height: auto;
-}
-
-.container {
-    /* background-color: yellow; */
 }
 
 .benefits-desc-container {
