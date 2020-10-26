@@ -148,3 +148,117 @@ $(document).ready(function(){
       	$("#homepage_img").attr("src", "images/plants-homepage-2.jpg");
     });
 });
+
+//ajax for more info for shopping page
+$(document).ready(function(){
+    'use strict';
+    // find the desired selectors
+    var btn = document.getElementById('request');
+    var bio = document.getElementById('the-sill');
+
+    var request = new XMLHttpRequest();
+    // keep track of the request
+    request.onreadystatechange = function() {
+        // check if the response data send back to us
+        if(request.readyState === 4) {
+            // add a border
+            bio.style.border = '1px solid #b5b5b5';
+            // uncomment the line below to see the request
+            // console.log(request);
+            // check if the request is successful
+            if(request.status === 200) {
+              // update the HTML of the element
+              bio.innerHTML = request.responseText;
+            } else {
+              // otherwise display an error message
+              bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+            }
+        }
+    }
+    // specify the type of request
+    // register an event
+    btn.addEventListener('click', function() {
+    // hide the button
+    this.style.display = 'none';
+    // send the request
+    request.open('Get', '../mission-statements/the-sill-ms.txt');
+
+    request.send();
+    });
+});
+
+$(document).ready(function(){
+    'use strict';
+    // find the desired selectors
+    var btn = document.getElementById('request2');
+    var bio = document.getElementById('houseplant-shop');
+
+    var request = new XMLHttpRequest();
+    // keep track of the request
+    request.onreadystatechange = function() {
+        // check if the response data send back to us
+        if(request.readyState === 4) {
+            // add a border
+            bio.style.border = '1px solid #b5b5b5';
+            // uncomment the line below to see the request
+            // console.log(request);
+            // check if the request is successful
+            if(request.status === 200) {
+              // update the HTML of the element
+              bio.innerHTML = request.responseText;
+            } else {
+              // otherwise display an error message
+              bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+            }
+        }
+    }
+    // specify the type of request
+    // register an event
+    btn.addEventListener('click', function() {
+    // hide the button
+    this.style.display = 'none';
+    // send the request
+    request.open('Get', '../mission-statements/houseplant-shop-ms.txt');
+
+    request.send();
+    });
+});
+
+$(document).ready(function(){
+    'use strict';
+    // find the desired selectors
+    var btn = document.getElementById('request3');
+    var bio = document.getElementById('bloomscape');
+
+    var request = new XMLHttpRequest();
+    // keep track of the request
+    request.onreadystatechange = function() {
+        // check if the response data send back to us
+        if(request.readyState === 4) {
+            // add a border
+            bio.style.border = '1px solid #b5b5b5';
+            // uncomment the line below to see the request
+            // console.log(request);
+            // check if the request is successful
+            if(request.status === 200) {
+              // update the HTML of the element
+              bio.innerHTML = request.responseText;
+            } else {
+              // otherwise display an error message
+              bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+            }
+        }
+    }
+    // specify the type of request
+    // register an event
+    btn.addEventListener('click', function() {
+    // hide the button
+    this.style.display = 'none';
+    // send the request
+    request.open('Get', '../mission-statements/bloomscape-ms.txt');
+
+    request.send();
+    });
+});
+
+//jquery + json

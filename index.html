@@ -38,26 +38,22 @@
             <ol>
                 <li>1. Allergy Relief
                     <div style="width:65%;margin:0 auto">
-                        <p>Researchers found that rooms with plants have less dust and mold than rooms without any foliage. Leaves and other
-                        parts of the plants act as natural filters to catch allergens and other airborne particles.</p>
+                        <p id = "allergy_relief"> </p>
                     </div>
                 </li>
                 <li>2. Air Purifiers
                     <div style="width:65%;margin:0 auto">
-                        <p>Extensive research by NASA has revealed that houseplants can remove up to 87 per cent of air toxin in 24 hours.</p>
+                        <p id = "air_purifiers"> </p>
                     </div>
                 </li>
                 <li>3. Mood Boosters
                     <div style="width:65%;margin:0 auto">
-                        <p>Studies have also proven that indoor plants improve concentration and productivity (by up to 15 percent!),
-                        reduce stress levels and boost your mood. Keeping flowers and plants throughout the home and the workplace
-                        vastly increases happiness and lowers the likelihood of depression.</p>
+                        <p id = "mood_boosters"> </p>
                     </div>
                 </li>
                 <li>4. Increasing Humidity
                     <div style="width:65%;margin:0 auto">
-                        <p>A study done by the Agricultural University of Norway, showed that houseplants, when grouped together,
-                        decrease the likelihood of dry skin, common colds, and sore throats.</p>
+                        <p id = "increasing_humidity"> </p>
                     </div>
                 </li>
                 <li>Sources
@@ -71,5 +67,37 @@
                 </li>
             </ol>
         </div>
+        <script>
+        /* Creating a JSON object with JSON data*/
+        var obj =
+            '{ "allergy_relief": "Researchers have found that rooms with plants have less dust and mold than rooms without any foliage. \
+             Leaves and other parts of the plant act as natural filters to catch allergens and other airborne particles."}';
+
+         var x =
+             '{ "air_purifiers": "Extensive research by NASA has revealed that houseplants can remove up to 87%  of air toxins in 24 hours."}';
+
+          var y =
+              '{ "mood_boosters": "Studies have proven that indoor plants improve concentration and productivity, \
+              reduce stress levels and boost mood. Keeping flowers and plants throughout the home and the workplace \
+              vastly increases happiness and lowers the likelihood of depression."}';
+
+           var z =
+               '{ "increasing_humidity": "A study done by the Agricultural University of Norway, showed that houseplants, when grouped together, \
+               decrease the likelihood of dry skin, common colds, and sore throats."}';
+
+        /* Parsing the JSON data*/
+        var text = JSON.parse(obj);
+        var text1 = JSON.parse(x);
+        var text2 = JSON.parse(y);
+        var text3 = JSON.parse(z);
+
+
+        /* Displaying the JSON data by linking the #test paragraph tag and the JSON object*/
+        document.getElementById("allergy_relief").innerHTML = text.allergy_relief + "<br>";
+        document.getElementById("air_purifiers").innerHTML = text1.air_purifiers + "<br>";
+        document.getElementById("mood_boosters").innerHTML = text2.mood_boosters + "<br>";
+        document.getElementById("increasing_humidity").innerHTML = text3.increasing_humidity + "<br>";
+
+        </script>
     </body>
 </html>
