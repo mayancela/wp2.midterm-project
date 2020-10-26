@@ -53,7 +53,7 @@ ul {
     font-weight: bold;
 }
 
-#homepage-desc-container {
+.desc-container {
     width: 80%;
     margin: 0 auto;
 }
