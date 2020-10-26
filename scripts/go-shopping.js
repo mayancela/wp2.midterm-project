@@ -152,7 +152,7 @@ window.onload = function() { //event hooking being used to prevent style == null
       request.onreadystatechange = function() {
           // check if the response data send back to us
           if(request.readyState === 4) {
-              bio.style.fontSize = '0.8em';
+              bio.style.fontSize = '0.85em';
               // check if the request is successful
               if(request.status === 200) {
                 // update the HTML of the element
@@ -185,7 +185,7 @@ window.onload = function() { //event hooking being used to prevent style == null
       request.onreadystatechange = function() {
           // check if the response data send back to us
           if(request.readyState === 4) {
-              bio.style.fontSize = '0.8em';
+              bio.style.fontSize = '0.85em';
               // check if the request is successful
               if(request.status === 200) {
                 // update the HTML of the element
@@ -218,7 +218,7 @@ window.onload = function() { //event hooking being used to prevent style == null
       request.onreadystatechange = function() {
           // check if the response data send back to us
           if(request.readyState === 4) {
-              bio.style.fontSize = '0.8em';
+              bio.style.fontSize = '0.85em';
               // check if the request is successful
               if(request.status === 200) {
                 // update the HTML of the element
